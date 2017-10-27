@@ -133,6 +133,7 @@
 
 .order__form-legend-color {
   margin-bottom: 32px;
+  margin-right: 103px;
 }
 
 .order__form-input:active {
@@ -390,7 +391,7 @@
     margin: -50px auto 60px auto;
     padding-top: 65px;
     padding-bottom: 65px;
-    width: @tablet-width;
+    width: 100%;
   }
 
   .order-main__title {
@@ -444,7 +445,7 @@
   }
 
   .order__color {
-    width: 668px;
+    width: 676px;
     margin-right: auto;
     box-sizing: border-box;
     display: flex;
@@ -460,7 +461,7 @@
   }
 
   .order__item-color {
-    width: 220px;
+    width: 133px;
     margin-bottom: 52px;
   }
 
@@ -527,10 +528,10 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
-    padding-left: 205px;
+    padding-left: 0;
     padding-right: 0;
     justify-content: space-between;
-    min-width: 480px;
+    width: 453px;
   }
 
   .order__list-name {
@@ -659,11 +660,15 @@
 
 
 @media (min-width: @desktop-width) {
+  .order__form-legend-color {
+    margin-right: 0;
+  }
+
   .order-main__title-container {
     margin-top: -55px auto 105px auto;
     padding-top: 58px;
     padding-bottom: 88px;
-    width: 1150px;
+    width: 100%;
   }
 
   .order-main__title {
@@ -692,11 +697,11 @@
 
   .order__type {
     display: flex;
-    width: 1050px;
+    width: 980px;
     margin-right: auto;
     box-sizing: border-box;
     padding-left: 0;
-    margin-left: 85px;
+    margin-left: auto;
   }
 
   .order__form-legend {
@@ -712,6 +717,7 @@
     width: 1050px;
     margin-right: auto;
     box-sizing: border-box;
+    padding-top: 53px;
     padding-left: 0;
     margin-left: 85px;
     padding-bottom: 0;
@@ -753,7 +759,6 @@
     box-sizing: border-box;
     margin-bottom: 0;
   }
-
 
   .order__name {
     width: 1050px;
