@@ -48,18 +48,19 @@
   }
 
   .promo-catalog__wrapper {
-  position: relative;
-}
-.promo-catalog__wrapper::after {
-  content: "";
-  position: absolute;
-  z-index: 100;
-  display: block;
-  bottom: 0px;
-  width: 100%;
-  height: 23px;
-  background-image: url("../img/bg-zigzag-fill.svg");
-}
+    position: relative;
+  }
+
+  .promo-catalog__wrapper::after {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -75,6 +76,7 @@
     min-height: 66px;
     padding-right: 320px;
   }
+
   .promo-catalog__text {
     margin-left: 10px;
     display: block;
