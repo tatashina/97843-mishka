@@ -1,53 +1,190 @@
+.week-good__container {
+  box-sizing: border-box;
+}
+
 .week-good {
-  background-color: @white;
+  position: relative;
+  margin-top: 29px;
 }
 
 .week-good__title {
-  margin-top: 28px;
+  margin-bottom: 4px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .week-good__mark {
   display: block;
-  margin-top: 4px;
+  margin: 0 0 25px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   color: #63d1bb;
 }
 
 .week-good__description {
-  margin-top: 27px;
+  margin-bottom: 18px;
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
+  color: #444444;
 }
 
 .week-good__table {
+  margin-bottom: 27px;
+  width: 100%;
+  border-collapse: collapse;
   font-size: 15px;
   line-height: 20px;
-  margin-top: 28px;
-  margin-bottom: 28px;
-  border-collapse: collapse;
-  width: 100%;
+  font-weight: normal;
+  color: #444444;
 }
 
-.week-good__table-attr,
-.week-good__table-value {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.week-good__table-row {
+  border-bottom: 1px solid #ececec;
+}
+
+.week-good__table-attr {
+  width: 33%;
+  padding-top: 11px;
+  padding-bottom: 8px;
+  text-align: left;
 }
 
 .week-good__table-value {
-  padding-left: 15px;
+  padding-left: 10px;
+}
+
+.week-good__picture img {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.week-good__buy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .week-good__price {
+  margin-top: 5px;
+  margin-bottom: 26px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  text-align: center;
-  margin-bottom: 28px;
 }
 
 .week-good__btn {
-  display: block;
+  width: 257px;
+  outline: 3px solid @black;
+}
+
+
+@media (min-width: @tablet-width) {
+  .week-good {
+    margin-top: 33px;
+    margin-bottom: 40px;
+  }
+
+  .week-good__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-end;
+  }
+
+  .week-good__title {
+    flex-grow: 1;
+    margin-bottom: 57px;
+    font-size: 43px;
+    line-height: 50px;
+    margin-left: -4px;
+  }
+
+  .week-good__mark {
+    flex-grow: 0;
+    width: 70px;
+    margin-top: 10px;
+    padding-right: 25px;
+    text-align: center;
+  }
+
+  .week-good__wrap {
+    width: 290px;
+    margin-bottom: 150px;
+  }
+
+  .week-good__description {
+    margin-top: -7px;
+    margin-bottom: 37px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .week-good__table {
+    margin-bottom: 56px;
+  }
+
+  .week-good__table-attr {
+    padding-right: 0;
+  }
+
+  .week-good__picture img {
+    width: 333px;
+    margin-bottom: 0;
+  }
+
+  .week-good__buy {
+    width: 290px;
+    margin-top: -150px;
+  }
+
+  .week-good__price {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-good {
+    margin-top: 60px;
+  }
+
+  .week-good__title {
+    z-index: 5;
+    font-size: 53px;
+    line-height: 57px;
+    margin-top: 55px;
+  }
+
+  .week-good__mark {
+    order: -1;
+    margin-top: 70px;
+    padding-left: 47px;
+    padding-right: 0;
+    margin-right: 53px;
+  }
+
+  .week-good__wrap {
+    margin-left: 175px;
+  }
+
+  .week-good__description {
+    margin-bottom: 48px;
+  }
+
+  .week-good__table {
+    margin-bottom: 110px;
+  }
+
+  .week-good__picture img {
+    width: 525px;
+    margin-top: -165px;
+  }
+
+  .week-good__buy {
+    margin-left: 175px;
+  }
 }

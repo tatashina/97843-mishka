@@ -1,17 +1,126 @@
 .features {
-  background-color: @white;
   margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+}
+
+.features-container {
+  box-sizing: border-box;
 }
 
 .features__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
-.features__item {
-  padding-top: 84px;
+.features__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+}
+
+.features__list-item {
+  padding-top: 14px;
+  min-height: 92px;
+  max-width: 300px;
+}
+
+.features__list-item--icon-flower::before {
+  display: block;
+  margin-left: 9px;
+  content: url("../img/icon-feature-flower.svg");
+  width: 32px;
+  height: 38px;
+}
+
+.features__list-item--icon-money::before {
+  display: block;
+  content: url("../img/icon-feature-money.svg");
+  width: 47px;
+  height: 28px;
+  margin: 0 0 24px 2px;
+}
+
+.features__list-item--icon-heart::before {
+  display: block;
+  content: url("../img/icon-feature-heart.svg");
+  width: 34px;
+  height: 28px;
+  margin: 5px 0 24px 9px;
+}
+
+.features__list-item--icon-ball::before {
+  display: block;
+  content: url("../img/icon-feature-ball.svg");
+  width: 35px;
+  height: 35px;
+  margin: 0 0 18px 4px;
+}
+
+.features__list-item--icon-rocket::before {
+  display: block;
+  content: url("../img/icon-feature-rocket.svg");
+  padding-bottom: 8px;
+  width: 55px;
+  height: 24px;
+}
+
+.features__list-item--icon-gift::before {
+  display: block;
+  content: url("../img/icon-feature-gift.svg");
+  width: 33px;
+  height: 33px;
+}
+
+.features__item-text {
+  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    box-sizing: content-box;
+  }
+
+  .features__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-top: 23px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 480px;
+  }
+
+  .features__list-item {
+    padding-left: 5px;
+    width: 50%;
+  }
+
+  .features__item-text {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-container {
+    padding-right: 172px;
+    padding-left: 172px;
+  }
+
+  .features__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .features__list-item {
+    padding-left: 0;
+  }
 }
