@@ -110,6 +110,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .features {
+    margin-top: 98px;
+  }
+
   .features-container {
     padding-right: 172px;
     padding-left: 172px;
@@ -123,4 +127,19 @@
   .features__list-item {
     padding-left: 0;
   }
+}
+
+.features__wrapper {
+  position: relative;
+}
+
+.features__wrapper::before {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  display: block;
+  top: -55px;
+  width: 100%;
+  height: 23px;
+  background-image: url("../img/bg-zigzag-line.svg");
 }
