@@ -14,7 +14,13 @@
             <ul class="main-header__nav-list">
               <li class="main-header__nav-item">
                 <a class="main-header__nav-link">
-                  <div class="main-header__nav-logo"><img class="main-header__nav-logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="logo"/></div>
+                  <div class="main-header__nav-logo">
+                    <picture>
+                      <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+                      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                      <img class="main-header__nav-logo-img" src="img/logo-mobile.svg" alt="logo">
+                    </picture>
+                  </div>
                 </a>
                 <button class="main-header__nav-burger" type="button" value="Открыть меню"><span class="visually-hidden">Меню</span></button>
               </li>
@@ -37,22 +43,24 @@
         </h1>
       </div>
     </div>
-    <div class="promo-catalog">
-      <div class="promo-catalog__item-container container">
-        <ul class="promo-catalog__list">
-          <li class="promo-catalog__item promo-catalog__interior">
-            <a class="promo-catalog__link promo-catalog__link-interior" href="#">
-              <span class="promo-catalog__text promo-catalog__text-interior">Предметы интерьера</span>
-              <span class="promo-catalog__icon promo-catalog__icon-interior"></span>
-            </a>
-          </li>
-          <li class="promo-catalog__item promo-catalog__toys">
-            <a class="promo-catalog__link promo-catalog__link-toys" href="#">
-              <span class="promo-catalog__text promo-catalog__text-toys">Детские игрушки</span>
-              <span class="promo-catalog__icon promo-catalog__icon-toys"></span>
-            </a>
-          </li>
-        </ul>
+    <div class="promo-catalog__wrapper">
+      <div class="promo-catalog">
+        <div class="promo-catalog__item-container container">
+          <ul class="promo-catalog__list">
+            <li class="promo-catalog__item promo-catalog__interior">
+              <a class="promo-catalog__link promo-catalog__link-interior" href="#">
+                <span class="promo-catalog__text promo-catalog__text-interior">Предметы интерьера</span>
+                <span class="promo-catalog__icon promo-catalog__icon-interior"></span>
+              </a>
+            </li>
+            <li class="promo-catalog__item promo-catalog__toys">
+              <a class="promo-catalog__link promo-catalog__link-toys" href="#">
+                <span class="promo-catalog__text promo-catalog__text-toys">Детские игрушки</span>
+                <span class="promo-catalog__icon promo-catalog__icon-toys"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <main>
@@ -78,26 +86,34 @@
               </tr>
             </table>
           </div>
-          <div class="week-good__picture"><img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="picture-good"></div>
+          <div class="week-good__picture">
+            <picture>
+              <source media="(min-width: 1050px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" width="260" height="315" alt="picture-good">
+              </picture>
+          </div>
           <div class="week-good__buy">
             <p class="week-good__price">Цена: 990 руб.</p>
             <a class="week-good__btn btn" href="#">ЗАКАЗАТЬ</a>
           </div>
         </div>
       </section>
-      <section class="features">
-        <div class="features-container container">
-        <h2 class="features__title title">Коротко о нас:</h2>
-        <ul class="features__list">
-          <li class="features__list-item features__list-item--icon-flower"><p class="features__item-text">Экологически <br> чистые материалы</p></li>
-          <li class="features__list-item features__list-item--icon-money"><p class="features__item-text">Скандинавский стиль <br> по российской цене</p></li>
-          <li class="features__list-item features__list-item--icon-heart"><p class="features__item-text">Увеличивает лайки <br> на фотографиях</p></li>
-          <li class="features__list-item features__list-item--icon-ball"><p class="features__item-text">Связано вручную с <br> любовью и умилением</p></li>
-          <li class="features__list-item features__list-item--icon-rocket"><p class="features__item-text">Поддержка отечественного производителя</p></li>
-          <li class="features__list-item features__list-item--icon-gift"><p class="features__item-text">Поставляется в <br> подарочной упаковке</p></li>
-        </ul>
-        </div>
-      </section>
+      <div class="features__wrapper">
+        <section class="features">
+          <div class="features-container container">
+            <h2 class="features__title title">Коротко о нас:</h2>
+            <ul class="features__list">
+              <li class="features__list-item features__list-item--icon-flower"><p class="features__item-text">Экологически <br> чистые материалы</p></li>
+              <li class="features__list-item features__list-item--icon-money"><p class="features__item-text">Скандинавский стиль <br> по российской цене</p></li>
+              <li class="features__list-item features__list-item--icon-heart"><p class="features__item-text">Увеличивает лайки <br> на фотографиях</p></li>
+              <li class="features__list-item features__list-item--icon-ball"><p class="features__item-text">Связано вручную с <br> любовью и умилением</p></li>
+              <li class="features__list-item features__list-item--icon-rocket"><p class="features__item-text">Поддержка отечественного производителя</p></li>
+              <li class="features__list-item features__list-item--icon-gift"><p class="features__item-text">Поставляется в <br> подарочной упаковке</p></li>
+            </ul>
+          </div>
+        </section>
+      </div>
       <section class="feedbacks">
         <div class="feedbacks__container container">
           <h2 class="feedbacks__title title">Отзывы</h2>

@@ -14,7 +14,13 @@
             <ul class="main-header__nav-list">
               <li class="main-header__nav-item">
                 <a class="main-header__nav-link" href="index.html">
-                  <div class="main-header__nav-logo"><img class="main-header__nav-logo-img" src="img/logo-mobile.svg" width="86" height="35" alt="logo"/></div>
+                  <div class="main-header__nav-logo">
+                    <picture>
+                      <source media="(min-width: 1050px)" srcset="img/logo-desktop.svg">
+                      <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                      <img class="main-header__nav-logo-img" src="img/logo-mobile.svg" alt="logo">
+                    </picture>
+                  </div>
                 </a>
                 <button class="main-header__nav-burger" type="button" value="Открыть меню"><span class="visually-hidden">Меню</span></button>
               </li>
