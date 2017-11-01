@@ -93,7 +93,7 @@
 }
 
 .catalog__list-item__price {
-  margin-top: 0px;
+  margin-top: 0;
   font-weight: 700;
   display: block;
   font-size: 15px;
@@ -128,7 +128,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .catalog-main__title-container:after {
+  .catalog-main__title-container::after {
     content: "";
     position: absolute;
     z-index: 100;
@@ -281,7 +281,7 @@
     margin-right: 0;
   }
 
-  .catalog-main__title-container:after {
+  .catalog-main__title-container::after {
     bottom: -4px;
     background-size: auto;
   }
