@@ -5,14 +5,21 @@
   min-height: 503px;
   display: flex;
   flex-direction: column;
-  margin: 8px auto 56px auto;
+  margin: 8px auto 51px auto;
   position: relative;
+  &:hover {
+    box-shadow: 0 5px 15px 3px #ececec;
+  }
+
+  &:active {
+    box-shadow: 0 5px 15px 0 #ececec;
+  }
 }
 
 .promo__container {
+  order: 2;
   position: relative;
   width: auto;
-  order: 2;
 }
 
 .promo__video-btn {
@@ -27,6 +34,15 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  &:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.7;
+  }
 }
 
 .promo__title {
@@ -36,7 +52,7 @@
   color: @black;
   display: flex;
   min-height: 50px;
-  margin-top: 26px;
+  margin-top: 21px;
   order: 1;
 }
 
@@ -66,7 +82,7 @@
 }
 
 .promo__btn {
-  max-width: 140px;
+  min-width: 188px;
   background-color: transparent;
   order: 4;
 }
@@ -75,13 +91,22 @@
   .promo {
     min-width: 668px;
     min-height: 745px;
-    margin: 53px auto 60px auto;
+    margin: 30px auto 52px auto;
   }
 
   .promo__video-btn {
     top: 190px;
     left: 283px;
     transform: none;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(0.8);
+      opacity: 0.7;
+    }
   }
 
   .promo__video-img {
@@ -93,7 +118,7 @@
   .promo__title {
     font-size: 20px;
     order: 2;
-    margin: 35px 0 0 0;
+    margin: 29px 0 0 0;
   }
 
   .promo__title::before {
@@ -157,7 +182,7 @@
 
   .promo__btn {
     min-width: 1px;
-    max-width: 213px;
+    max-width: 221px;
     margin: 25px 0 0 70px;
     padding: 16px 3px;
   }
