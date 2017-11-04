@@ -1,5 +1,5 @@
 .feedbacks {
-  margin-top: 40px;
+  margin-top: 35px;
   margin-bottom: 44px;
 }
 
@@ -46,27 +46,38 @@
 .feedbacks__control {
   display: inline-block;
   vertical-align: middle;
-  width: 129px;
+  width: 125px;
   box-sizing: border-box;
   height: 52px;
   cursor: pointer;
 }
 
-.feedbacks__right-arrow {
-  background-image: url("../img/icon-right-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px 28px;
+.feedbacks__img-svg-right {
+  padding-top: 12px;
+  fill: @black;
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
 
-.feedbacks__left-arrow {
-  background-image: url("../img/icon-left-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50px 28px;
-  border-right: none;
-  margin-right: -4px;
+.feedbacks__img-svg-left {
+  padding-top: 12px;
+  fill: @black;
+
+  &:hover {
+    fill: #666666;
+  }
+
+  &:active {
+    fill: #b2b2b2;
+  }
 }
+
 
 @media (min-width: @tablet-width) {
   .feedbacks {
@@ -124,7 +135,7 @@
 
   .feedbacks__btn {
     position: absolute;
-    width: 175px;
+    min-width: 172px;
     top: -97px;
     right: 0;
   }
