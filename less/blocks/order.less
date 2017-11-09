@@ -10,11 +10,11 @@
   fill: #444444;
 }
 
-.order__form-input-tel:hover + .order__img-svg-tel {
+.order__form-input--tel:hover + .order__img-svg-tel {
   fill: #61d1ba;
 }
 
-.order__form-input-tel:focus + .order__img-svg-tel {
+.order__form-input--tel:focus + .order__img-svg-tel {
   fill: #61d1ba;
 }
 
@@ -25,11 +25,11 @@
   fill: #444444;
 }
 
-.order__form-input-email:hover + .order__img-svg-email {
+.order__form-input--email:hover + .order__img-svg-email {
   fill: #61d1ba;
 }
 
-.order__form-input-email:focus + .order__img-svg-email {
+.order__form-input--email:focus + .order__img-svg-email {
   fill: #61d1ba;
 }
 
@@ -96,7 +96,8 @@
   margin-bottom: 43px;
 }
 
-.order__form-legend {
+.order__form-title {
+  display: block;
   font-size: 17px;
   line-height: 17px;
   font-weight: 700;
@@ -108,11 +109,11 @@
   position: relative;
 }
 
-.order__form-legend-name {
+.order__form-title-name {
   margin-bottom: 25px;
 }
 
-.order__form-legend-name::after {
+.order__form-title-name::after {
   content: "";
   position: absolute;
   background-color: #63d1bb;
@@ -122,12 +123,12 @@
   top: 9px;
 }
 
-.order__form-legend-tel {
+.order__form-title--tel {
   margin-bottom: 10px;
   margin-left: 0;
 }
 
-.order__form-legend-tel::after {
+.order__form-title--tel::after {
   content: "";
   position: absolute;
   background-color: #63d1bb;
@@ -137,12 +138,12 @@
   top: 9px;
 }
 
-.order__form-legend-email {
+.order__form-title--email {
   margin-bottom: 10px;
   margin-left: 0;
 }
 
-.order__form-legend-email::after {
+.order__form-title--email::after {
   content: "";
   position: absolute;
   background-color: #63d1bb;
@@ -152,11 +153,11 @@
   top: 7px;
 }
 
-.order__form-legend-add {
+.order__form-title--add {
   margin-bottom: 23px;
 }
 
-.order__form-legend-add::after {
+.order__form-title--add::after {
   content: "";
   position: absolute;
   background-color: #63d1bb;
@@ -166,7 +167,7 @@
   top: 5px;
 }
 
-.order__form-legend-color {
+.order__form-title-color {
   margin-bottom: 32px;
   margin-right: 103px;
 }
@@ -185,7 +186,7 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
-.order__form-input-name {
+.order__form-input--name {
   min-width: 260px;
   border: none;
   font-size: 17px;
@@ -194,21 +195,22 @@
   padding-top: 13px;
   position: relative;
   border-bottom: 2px solid #444444;
+  margin-bottom: -3px;
 }
 
-.order__form-input-name:hover {
+.order__form-input--name:hover {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-name:active {
+.order__form-input--name:active {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-name:focus {
+.order__form-input--name:focus {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-tel {
+.order__form-input--tel {
   min-width: 260px;
   border: none;
   font-size: 17px;
@@ -218,19 +220,19 @@
   border-bottom: 2px solid #444444;
 }
 
-.order__form-input-tel:hover {
+.order__form-input--tel:hover {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-tel:active {
+.order__form-input--tel:active {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-tel:focus {
+.order__form-input--tel:focus {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-email {
+.order__form-input--email {
   min-width: 260px;
   border: none;
   font-size: 17px;
@@ -240,41 +242,41 @@
   border-bottom: 2px solid #444444;
 }
 
-.order__form-input-email:hover {
+.order__form-input--email:hover {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-email:active {
+.order__form-input--email:active {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-email:focus {
+.order__form-input--email:focus {
   border-bottom-color: #62d1ba;
 }
 
-.order__form-input-add {
+.order__form-input--add {
   font-size: 17px;
   line-height: 18px;
-  padding-top: 12px;
+  padding-top: 16px;
   margin-left: 30px;
   padding-left: 17px;
   padding-right: 8px;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
   position: relative;
   border: 2px solid #444444;
   resize: none;
 }
 
-.order__form-input-add:hover {
+.order__form-input--add:hover {
   border-color: #62d1ba;
 }
 
-.order__form-input-add:active {
+.order__form-input--add:active {
   border-color: #62d1ba;
   outline: none;
 }
 
-.order__form-input-add:focus {
+.order__form-input--add:focus {
   border-color: #62d1ba;
   outline: none;
 }
@@ -288,7 +290,7 @@
   position: relative;
 }
 
-.order__form-label-type::before {
+.order__form-label--type::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -299,19 +301,19 @@
   top: -5px;
 }
 
-.order__form-label-type:hover::before {
+.order__form-label--type:hover::before {
   border-color: #62d1ba;
 }
 
-.order__form-label-type:active::before {
+.order__form-input--type:active + .order__form-label--type::before {
   border-color: #c7c7c7;
 }
 
-.order__form-input-type:focus + label::before {
+.order__form-input--type:focus + .order__form-label--type::before {
   border-color: #62d1ba;
 }
 
-.order__form-label-color::before {
+.order__form-label--color::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -321,19 +323,19 @@
   top: -7px;
 }
 
-.order__form-label-color:hover::before {
+.order__form-label--color:hover::before {
   border-color: #62d1ba;
 }
 
-.order__form-label-color:active::before {
+.order__form-input--color:active + .order__form-label--color::before {
   border-color: #c7c7c7;
 }
 
-.order__form-input-color:focus + label::before {
+.order__form-input--color:focus + .order__form-label--color::before {
   border-color: #62d1ba;
 }
 
-.order__form-label-type::after {
+.order__form-label--type::after {
   content: "";
   width: 18px;
   height: 18px;
@@ -345,7 +347,7 @@
   display: none;
 }
 
-.order__form-label-color::after {
+.order__form-label--color::after {
   content: url("../img/icon-tick.svg");
   position: absolute;
   left: -58px;
@@ -384,28 +386,32 @@
   margin-left: 30px;
 }
 
-.order__form-input-type:checked ~ .order__form-label-type::after {
+.order__form-input--type:checked ~ .order__form-label--type::after {
   display: block;
 }
 
-.order__form-input-color:checked ~ .order__form-label-color::after {
+.order__form-input--color:checked ~ .order__form-label--color::after {
   display: block;
 }
 
-.order__item-name:hover .order__form-label-name::after {
+.order__item-name:hover .order__form-label--name::after {
   background-color: #62d1ba;
 }
 
-.order__item-name:focus .order__form-label-name::after {
+.order__item-name:focus .order__form-label--name::after {
   background-color: #62d1ba;
 }
 
-.order__item-name:active .order__form-label-name::after {
+.order__item-name:active .order__form-label--name::after {
   background-color: #62d1ba;
+}
+
+.order__form-title-name {
+  margin-bottom: 31px;
 }
 
 @media (min-width: @tablet-width) {
-  .order__form-label-color::after {
+  .order__form-label--color::after {
     content: url("../img/icon-tick.svg");
     position: absolute;
     display: none;
@@ -536,32 +542,32 @@
     padding-left: 0;
   }
 
-  .order__form-label-type::before {
+  .order__form-label--type::before {
     width: 47px;
     height: 47px;
     top: -11px;
     left: -80px;
   }
 
-  .order__form-label-type::after {
+  .order__form-label--type::after {
     width: 25px;
     height: 25px;
     top: 2px;
     left: -67px;
   }
 
-  .order__form-label-color::before {
+  .order__form-label--color::before {
     width: 49px;
     height: 49px;
     left: -80px;
     top: -10px;
   }
 
-  .order__form-label-name {
+  .order__form-label--name {
     margin-right: 25px;
   }
 
-  .order__form-legend-add {
+  .order__form-title--add {
     padding-top: 12px;
   }
 
@@ -584,28 +590,28 @@
     padding-left: 0;
   }
 
-  .order__form-legend {
+  .order__form-title {
     width: 167px;
     text-align: left;
   }
 
-  .order__form-legend-name::after {
+  .order__form-title-name::after {
     display: none;
   }
 
-  .order__form-legend-tel::after {
+  .order__form-title--tel::after {
     display: none;
   }
 
-  .order__form-legend-email {
+  .order__form-title--email {
     padding-top: 15px;
   }
 
-  .order__form-legend-email::after {
+  .order__form-title--email::after {
     display: none;
   }
 
-  .order__form-legend-add::after {
+  .order__form-title--add::after {
     display: none;
   }
 
@@ -651,13 +657,13 @@
     font-size: 19px;
   }
 
-  .order__form-input-name {
+  .order__form-input--name {
     min-width: 300px;
     flex-grow: 1;
     padding-top: 0;
   }
 
-  .order__form-input-tel {
+  .order__form-input--tel {
     flex-grow: 1;
     padding-top: 0;
     min-width: 300px;
@@ -666,13 +672,13 @@
     margin-bottom: 0;
   }
 
-  .order__form-input-email {
+  .order__form-input--email {
     flex-grow: 1;
     background-position: 445px 10px;
     background-color: rgba(0, 0, 0, 0);
   }
 
-  .order__form-input-add {
+  .order__form-input--add {
     flex-grow: 1;
     margin-left: 0;
   }
@@ -703,7 +709,7 @@
 
 
 @media (min-width: @desktop-width) {
-  .order__form-legend-color {
+  .order__form-title-color {
     margin-right: 0;
   }
 
@@ -748,15 +754,15 @@
     margin-bottom: 8px;
   }
 
-  .order__form-legend {
+  .order__form-title {
     width: 110px;
   }
 
-  .order__form-label-color::after {
+  .order__form-label--color::after {
     left: -73px;
   }
 
-  .order__form-legend-email {
+  .order__form-title--email {
     padding-top: 8px;
   }
 
@@ -786,11 +792,11 @@
     width: 700px;
   }
 
-  .order__form-input-tel {
+  .order__form-input--tel {
     background-position: 670px -2px;
   }
 
-  .order__form-input-email {
+  .order__form-input--email {
     padding-top: 5px;
     background-position: 665px 3px;
   }
@@ -864,7 +870,7 @@
     padding-right: 175px;
   }
 
-  .order__form-input-name {
+  .order__form-input--name {
     flex-grow: 2;
   }
 

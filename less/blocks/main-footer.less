@@ -1,4 +1,9 @@
 .main-footer {
+  width: 100%;
+  background-color: @gray;
+}
+
+.main-footer__inner {
   background-color: @gray;
 }
 
@@ -73,13 +78,8 @@
   }
 }
 
-.main-footer__wrapper {
-  width: 100%;
-  background-color: @gray;
-}
-
 @media (min-width: @tablet-width) {
-  .main-footer {
+  .main-footer__inner {
     padding: 30px 0;
   }
 
@@ -108,7 +108,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .main-footer {
+  .main-footer__inner {
     padding: 45px 0;
   }
 
