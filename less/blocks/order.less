@@ -394,6 +394,22 @@
   display: block;
 }
 
+.order__form-input--type:checked ~ .order__form-label--type:active::after {
+  display: none;
+}
+
+.order__form-input--color:checked ~ .order__form-label--color:active::after {
+  display: none;
+}
+
+.order__form-input--type:active ~ .order__form-label--type::after {
+  display: block;
+}
+
+.order__form-input--color:active ~ .order__form-label--color::after {
+  display: block;
+}
+
 .order__item-name:hover .order__form-label--name::after {
   background-color: #62d1ba;
 }
