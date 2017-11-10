@@ -44,8 +44,12 @@
   }
 }
 
-.promo__container {
+.promo__container-text {
   order: 2;
+}
+
+.promo__container {
+  order: 1;
   position: relative;
   width: auto;
 }
@@ -58,7 +62,7 @@
   display: flex;
   min-height: 50px;
   margin-top: 21px;
-  order: 1;
+  order: 0;
 }
 
 .promo__title::before {
@@ -88,6 +92,7 @@
 
 .promo__btn {
   min-width: 188px;
+  width: 188px;
   background-color: transparent;
   order: 4;
 }
@@ -156,11 +161,16 @@
     max-width: @desktop-width;
     min-height: 455px;
     margin: 34px auto 102px auto;
-    flex-direction: row;
-    flex-wrap: no-wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    position: relative;
+    align-items: flex-end;
   }
 
   .promo__container {
+    position: absolute;
+    top: 0;
+    left: 0;
     order: 0;
     width: 682px;
   }
@@ -173,7 +183,7 @@
     max-width: 200px;
     min-height: 100px;
     font-size: 20px;
-    margin: 40px 80px 0 70px;
+    margin: 40px 87px 0 0;
     flex-direction: column;
   }
 
@@ -185,14 +195,14 @@
   .promo__descr {
     max-width: 240px;
     max-height: 100px;
-    padding: 20px;
-    margin: 13px 0 20px 50px;
+    padding: 0;
+    margin: 31px 49px 68px 0;
   }
 
   .promo__btn {
     min-width: 1px;
     max-width: 221px;
-    margin: 25px 0 0 70px;
-    padding: 16px 3px;
+    margin: 0;
+    padding: 16px 21px;
   }
 }
